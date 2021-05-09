@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="CSS/style.css"> -->
     <style>
-        body{
+        body {
             font-family: 'Baloo Bhai 2', cursive;
             color: white;
             margin: 0px;
             padding: 0px;
             background-image: url('img/gym_woman.jpg');
         }
-        .left{
+
+        .left {
             position: absolute;
             left: 40px;
             top: 20px;
@@ -24,105 +26,305 @@
             display: inline-block;
             text-align: center;
         }
-        .left img{
+
+        .left img {
             width: 136px;
-            filter:invert(100%)
+            filter: invert(100%)
         }
-        .left div{
+
+        .left div {
             width: 250px;
             line-height: 30px;
             font-size: 22px;
         }
-        .mid{
+
+        .mid {
             display: block;
             width: 36%;
-            margin:29px auto;
+            margin: 29px auto;
             /* border: 2px solid chartreuse; */
         }
-        .right{
+
+        .right {
             position: absolute;
             right: 34px;
             top: 20px;
             /* border: 2px solid yellow; */
             display: inline-block;
         }
-        .right button img{
+
+        .right button img {
             width: 26px;
         }
-        .right button{
+
+        .right button {
             background-color: black;
         }
-        .btn{
+
+        .btn {
             margin: 0px 6px;
             /* padding: 3px 3px; */
             border: solid 0.5px white;
             cursor: pointer;
         }
-        .btn:hover{
+
+        .btn:hover {
             zoom: 110%;
         }
-        .navbar{
+
+        .navbar {
             display: inline-block;
         }
-        .navbar li{
+
+        .navbar li {
             display: inline-block;
             font-size: 20px;
             padding: 4px 10px;
         }
-        .navbar li a{
+
+        .navbar li a {
             color: white;
             text-decoration: none;
         }
-        .navbar li a:hover, .navbar li a.active{
+
+        .navbar li a:hover,
+        .navbar li a.active {
             color: grey;
             /* text-decoration: underline; */
         }
-        .container{
+
+        .container {
             width: 30%;
             border: 2px solid white;
             margin: 106px 42px;
             padding: 25px;
             border-radius: 28px;
         }
-        .btns{
-        font-family: 'Baloo Bhai', cursive;
-        margin: 0px 9px;
-        background-color: black;
-        color: white;
-        padding: 4px 14px;
-        border: 2px solid rgb(255, 255, 255);
-        border-radius: 10px;
-        font-size: 20px;
-        cursor: pointer;
-        }
-        .btns:hover {
-        background-color: rgb(31, 30, 30);
-        }
-        .form-group input {
-        font-family: 'Baloo Bhai', cursive;
-        text-align: center;
-        display: block;
-        width: 308px;
-        padding: 1px;
-        border: 2px solid black;
-        margin: 11px auto;
-        font-size: 25px;
-        border-radius: 8px;
-    }
 
-    .container h1 {
-        text-align: center;
-    }
-    .container button{
-        display: block;
-        width: 23%;
-        margin:auto;
-    }
-    .container button:hover{
-        zoom: 105%;
-    }
+        .btns {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btns:hover {
+            background-color: rgb(31, 30, 30);
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 308px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 23%;
+            margin: auto;
+        }
+
+        .container button:hover {
+            zoom: 105%;
+        }
+
+
+        @media (min-width:1274px) and (max-width:1422px) {
+            .navbar li {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width:1014px) and (max-width:1273px) {
+            .navbar li {
+                font-size: 18px;
+                /* width: 50%; */
+            }
+
+            .mid {
+                margin: 29px 254px;
+                width: 50%;
+            }
+
+            .container button {
+                width: 30%;
+            }
+        }
+
+        @media (min-width:820px) and (max-width:1014px) {
+            .navbar {
+                display: flex;
+            }
+
+            .navbar li {
+                font-size: 30px;
+            }
+
+            .mid {
+                margin: 22px 123px;
+                width: 100%;
+            }
+
+            .container {
+                width: 64%;
+                margin: 102px auto;
+            }
+
+            .left img {
+                width: 60px;
+            }
+
+            .left {
+                left: -50px;
+            }
+
+            .left div {
+                line-height: 15px;
+                font-size: 14px;
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
+        @media (min-width:696px) and (max-width:820px) {
+            .navbar {
+                display: flex;
+            }
+
+            .navbar li {
+                font-size: 20px;
+            }
+
+            .mid {
+                margin: 22px 123px;
+                width: 100%;
+            }
+
+            .container {
+                width: 64%;
+                margin: 102px auto;
+            }
+
+            .left img {
+                width: 60px;
+            }
+
+            .left {
+                left: -50px;
+            }
+
+            .left div {
+                line-height: 15px;
+                font-size: 14px;
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
+        @media (min-width:576px) and (max-width:696px) {
+            .navbar {
+                display: flex;
+            }
+
+            .navbar li {
+                font-size: 15px;
+            }
+
+            .mid {
+                margin: 22px 123px;
+                width: 100%;
+            }
+
+            .container {
+                width: 64%;
+                margin: 102px auto;
+            }
+
+            .left img {
+                width: 60px;
+            }
+
+            .left {
+                left: -50px;
+            }
+
+            .left div {
+                line-height: 15px;
+                font-size: 14px;
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width:576px) {
+            .navbar {
+                display: flex;
+            }
+
+            .navbar li {
+                font-size: 10px;
+            }
+
+            .mid {
+                margin: 22px 38px;
+                width: 100%;
+            }
+
+            .container {
+                width: 64%;
+                margin: 102px auto;
+            }
+
+            .left img {
+                width: 40px;
+            }
+
+            .left {
+                left: -70px;
+            }
+
+            .left div {
+                line-height: 10px;
+                font-size: 8px;
+            }
+
+            .right {
+                display: none;
+            }
+
+            .container button {
+                width: 40%;
+            }
+
+            .form-group input {
+                width: 219px;
+                font-size: 22px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header class="header">
 
@@ -151,20 +353,21 @@
     <div class="container">
         <h1>Join the best gym of odisha now.</h1>
         <form action="noaction.php">
-        <div class="form-group">
-            <input type="text" placeholder="Enter your Name">
-        </div>
-        <div class="form-group">
-            <input type="text" placeholder="Enter your Age">
-        </div>
-        <div class="form-group">
-            <input type="text" placeholder="Enter your Gender">
-        </div>
-        <div class="form-group">
-            <input type="text" placeholder="Enter your Locality">
-        </div>
-        <button class="btns">submit</button>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <button class="btns">submit</button>
         </form>
     </div>
 </body>
+
 </html>
